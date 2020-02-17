@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> List of Endangered Animals</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="input-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Name</label>
+          <input type ="text" id="name" required/>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="form-item">
+          <label for="class" class="primary">Class</label>
+          <select id="class1">
+          <option value="" disabled selected></option>
+          <option value="Mammal">Mammal</option>
+          <option value="Reptile">Reptile</option>
+          <option value="Amphbian">Amphbian</option>
+          <option value="Aves">Aves</option>
+        </select>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="form-item">
+          <label for="habitat" class="primary">Habitat</label>
+          <select id="habitat">
+          <option value="" disabled selected></option>
+          <option value="Terrestrial">Terrestrial</option>
+          <option value="Marine">Marine</option>
+          <option value="FreshWater">Fresh Water</option>
+          <option value="Desert">Desert</option>
+        </select>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="form-item">
+          <label for="mode" class="primary">Mode Of Nutrition</label>
+          <select id="mode">
+          <option value="" disabled selected></option>
+          <option value="Holozoic">Holozoic</option>
+          <option value="Saprophytic">Saprophytic</option>
+          <option value="Parasitic">Parasitic</option>
+          <option value="Symbiotic">Symbiotic</option>
+        </select>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="form-item">
+          <label for="continent" class="primary">Continent</label><br>
+          <input type="radio" name="continent" value="Europe"> Europe <br>
+          <input type="radio" name="continent" value="Africa"> Africa <br>
+          <input type="radio" name="continent" value="Asia"> Asia <br>
+
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <input type="submit" value="save"/>
+    </form>
+    <h1>Endangered Animals</h1>
+    <ul id="reading-list"></ul>
+
+  </body>
+</html>
